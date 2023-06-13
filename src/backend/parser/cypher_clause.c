@@ -3130,7 +3130,7 @@ static List *make_join_condition_for_edge(cypher_parsestate *cpstate,
          * When the previous node is not in the join tree, but there is a vle
          * edge before that join, then we need to compare this vle's start node
          * against the previous vle's end node. No need to check the next edge,
-         * because that would be redundent.
+         * because that would be redundant.
          */
         if (!prev_node->in_join_tree &&
             prev_edge != NULL &&
