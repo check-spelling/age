@@ -147,7 +147,7 @@ char *get_next_default_alias(cypher_parsestate *cpstate)
         return get_next_default_alias(parent_cpstate);
     }
 
-    /* get the length of the combinded string */
+    /* get the length of the combined string */
     nlen = snprintf(NULL, 0, "%s%d", AGE_DEFAULT_ALIAS_PREFIX,
                     cpstate->default_alias_num);
 
