@@ -64,7 +64,7 @@ const CustomExecMethods cypher_merge_exec_methods = {MERGE_SCAN_STATE_NAME,
                                                      NULL, NULL, NULL, NULL};
 
 /*
- * Initializes the MERGE Execution Node at the begginning of the execution
+ * Initializes the MERGE Execution Node at the beginning of the execution
  * phase.
  */
 static void begin_cypher_merge(CustomScanState *node, EState *estate,
