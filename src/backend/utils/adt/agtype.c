@@ -3934,7 +3934,7 @@ Datum agtype_hash_cmp(PG_FUNCTION_ARGS)
     PG_RETURN_INT16(hash);
 }
 
-// Comparision function for btree Indexes
+// Comparison function for btree Indexes
 PG_FUNCTION_INFO_V1(agtype_btree_cmp);
 
 Datum agtype_btree_cmp(PG_FUNCTION_ARGS)
