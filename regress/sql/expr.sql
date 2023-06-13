@@ -543,7 +543,7 @@ MATCH (n:Person) WHERE n.name =~ 'J.*' RETURN n
 $$) AS r(result agtype);
 
 --
---Coearce to Postgres 3 int types (smallint, int, bigint)
+--Coerce to Postgres 3 int types (smallint, int, bigint)
 --
 SELECT create_graph('type_coercion');
 SELECT * FROM cypher('type_coercion', $$

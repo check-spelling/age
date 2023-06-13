@@ -1147,7 +1147,7 @@ $$) AS r(result agtype);
 (3 rows)
 
 --
---Coearce to Postgres 3 int types (smallint, int, bigint)
+--Coerce to Postgres 3 int types (smallint, int, bigint)
 --
 SELECT create_graph('type_coercion');
 NOTICE:  graph "type_coercion" has been created
