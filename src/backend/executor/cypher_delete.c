@@ -212,7 +212,7 @@ static void rescan_cypher_delete(CustomScanState *node)
 {
      ereport(ERROR,
              (errcode(ERRCODE_FEATURE_NOT_SUPPORTED),
-                      errmsg("cypher DELETE clause cannot be rescaned"),
+                      errmsg("cypher DELETE clause cannot be rescanned"),
                       errhint("its unsafe to use joins in a query with a Cypher DELETE clause")));
 }
 
