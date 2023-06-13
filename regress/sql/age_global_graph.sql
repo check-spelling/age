@@ -46,7 +46,7 @@ SELECT * FROM cypher('ag_graph_2', $$ RETURN delete_global_graphs('ag_graph_2') 
 SELECT * FROM cypher('ag_graph_1', $$ RETURN delete_global_graphs('ag_graph_1') $$) AS (result agtype);
 SELECT * FROM cypher('ag_graph_3', $$ RETURN delete_global_graphs('ag_graph_3') $$) AS (result agtype);
 
---- delete unitialized graph context
+--- delete uninitialized graph context
 --- should throw exception graph "ag_graph_4" does not exist
 SELECT * FROM cypher('ag_graph_4', $$ RETURN delete_global_graphs('ag_graph_4') $$) AS (result agtype);
 
