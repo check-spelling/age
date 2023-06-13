@@ -1518,7 +1518,7 @@ cypher_update_information *transform_cypher_remove_item_list(
         {
             ereport(ERROR,
                     (errcode(ERRCODE_FEATURE_NOT_SUPPORTED),
-                     errmsg("REMOVE clause does not support adding propereties from maps"),
+                     errmsg("REMOVE clause does not support adding properties from maps"),
                      parser_errposition(pstate, set_item->location)));
         }
         set_item->is_add = false;
