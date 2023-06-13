@@ -8601,7 +8601,7 @@ agtype_value *alter_property_value(agtype_value *properties, char *var_name,
              * If the new agtype is scalar, push the agtype_value to the
              * parse state. If the agtype is an object or array convert the
              * agtype to a binary agtype_value to pass to the parse_state.
-             * This will save uncessary deserialization and serialization
+             * This will save unnecessary deserialization and serialization
              * logic from running.
              */
             if (AGTYPE_CONTAINER_IS_SCALAR(&new_v->root))
@@ -8639,7 +8639,7 @@ agtype_value *alter_property_value(agtype_value *properties, char *var_name,
          * If the new agtype is scalar, push the agtype_value to the
          * parse state. If the agtype is an object or array convert the
          * agtype to a binary agtype_value to pass to the parse_state.
-         * This will save uncessary deserialization and serialization
+         * This will save unnecessary deserialization and serialization
          * logic from running.
          */
         if (AGTYPE_CONTAINER_IS_SCALAR(&new_v->root))
