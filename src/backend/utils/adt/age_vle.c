@@ -164,7 +164,7 @@ static VLE_local_context *get_cached_VLE_local_context(int64 vle_grammar_node_id
 
             /*
              * Clear (unlink) the previous context's next pointer, if needed.
-             * Also clear prev as we are at the end of avaiable cached contexts
+             * Also clear prev as we are at the end of available cached contexts
              * and just purging them off. Remember, this forms a loop that will
              * exit the while after purging.
              */
