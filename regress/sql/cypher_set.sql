@@ -247,7 +247,7 @@ SELECT * FROM cypher('cypher_set_1', $$
     RETURN p
 $$) AS (p agtype);
 
--- test assigning non-map to an enitity
+-- test assigning non-map to an entity
 SELECT * FROM cypher('cypher_set_1', $$
     MATCH (p {name: 'Peter'})
     SET p = "Peter"
