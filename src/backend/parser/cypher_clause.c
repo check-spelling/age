@@ -5704,7 +5704,7 @@ Query *cypher_parse_sub_analyze(Node *parseTree,
  * The second query will be for the path that this MERGE clause defines. The
  * two subqueries will be joined together using a LATERAL LEFT JOIN with the
  * previous query on the left and the MERGE path subquery on the right. Like
- * case 1 the targetList will have all the decalred variables and a FuncExpr
+ * case 1 the targetList will have all the declared variables and a FuncExpr
  * that represents the MERGE clause with its needed metadata information, that
  * will be caught in the planner phase and converted into a path.
  *
