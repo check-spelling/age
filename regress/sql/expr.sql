@@ -698,7 +698,7 @@ SELECT * FROM cypher('expr', $$
 RETURN ''::int
 $$) AS r(result agtype);
 SELECT * FROM cypher('expr', $$
-RETURN 'falze'::int
+RETURN 'false_'::int
 $$) AS r(result agtype);
 --
 -- Test from an agtype value to agtype int
@@ -715,7 +715,7 @@ SELECT * FROM cypher('expr', $$
 RETURN ''::bool
 $$) AS r(result agtype);
 SELECT * FROM cypher('expr', $$
-RETURN 'falze'::bool
+RETURN 'false_'::bool
 $$) AS r(result agtype);
 -- Test from an agtype value to an agtype numeric
 --
@@ -1256,7 +1256,7 @@ SELECT * FROM cypher('expr', $$
 $$) AS (toBoolean agtype);
 -- should return null
 SELECT * FROM cypher('expr', $$
-    RETURN toBoolean("falze")
+    RETURN toBoolean("false_")
 $$) AS (toBoolean agtype);
 SELECT * FROM cypher('expr', $$
     RETURN toBoolean(null)
@@ -1286,7 +1286,7 @@ SELECT * FROM cypher('expr', $$
 $$) AS (toFloat agtype);
 -- should return null
 SELECT * FROM cypher('expr', $$
-    RETURN toFloat("falze")
+    RETURN toFloat("false_")
 $$) AS (toFloat agtype);
 SELECT * FROM cypher('expr', $$
     RETURN toFloat(null)
@@ -1316,7 +1316,7 @@ SELECT * FROM cypher('expr', $$
 $$) AS (toInteger agtype);
 -- should return null
 SELECT * FROM cypher('expr', $$
-    RETURN toInteger("falze")
+    RETURN toInteger("false_")
 $$) AS (toInteger agtype);
 SELECT * FROM cypher('expr', $$
     RETURN toInteger(null)
