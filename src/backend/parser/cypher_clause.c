@@ -4016,7 +4016,7 @@ static List *transform_match_entities(cypher_parsestate *cpstate, Query *query,
 
                 /*
                  * Check to see if the previous node was originally created
-                 * in a predecessing clause. If it was, then remove the id field
+                 * in a preceding clause. If it was, then remove the id field
                  * from the column ref. Just reference the agtype vertex
                  * variable that the prev clause created and the vle will handle
                  * extracting the id.
