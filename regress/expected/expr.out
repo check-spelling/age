@@ -5679,7 +5679,7 @@ SELECT * FROM cypher('UCSC', $$ RETURN collect(5) $$) AS (result agtype);
  [5]
 (1 row)
 
--- should return an empty aray
+-- should return an empty array
 SELECT * FROM cypher('UCSC', $$ RETURN collect(NULL) $$) AS (empty agtype);
  empty 
 -------
