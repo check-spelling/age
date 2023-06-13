@@ -306,7 +306,7 @@ static void mark_tts_isnull(TupleTableSlot *slot)
 /*
  * Function that is called mid-execution. This function will call
  * its subtree in the execution tree, and depending on the results
- * create the new path, and depending on the the context of the MERGE
+ * create the new path, and depending on the context of the MERGE
  * within the query pass data to the parent execution node.
  *
  * Returns a TupleTableSlot with the next tuple to it parent or
