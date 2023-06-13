@@ -1443,7 +1443,7 @@ expr:
         }
     /*
      * This is a catch all grammar rule that allows us to avoid some
-     * shift/reduce errors between expression indirection rules by colapsing
+     * shift/reduce errors between expression indirection rules by collapsing
      * those rules into one generic rule. We can then inspect the expressions to
      * decide what specific rule needs to be applied and then construct the
      * required result.
