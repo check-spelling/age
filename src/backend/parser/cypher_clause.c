@@ -3818,7 +3818,7 @@ static List *transform_match_entities(cypher_parsestate *cpstate, Query *query,
 
             /*
              * We want to add tranformed entity to entities before tranforming props
-             * so that props referncing currently transformed entity can be resolved.
+             * so that props referencing currently transformed entity can be resolved.
              */
             cpstate->entities = lappend(cpstate->entities, entity);
             entities = lappend(entities, entity);
@@ -3938,7 +3938,7 @@ static List *transform_match_entities(cypher_parsestate *cpstate, Query *query,
 
                 /*
                  * We want to add tranformed entity to entities before tranforming props
-                 * so that props referncing currently transformed entity can be resolved.
+                 * so that props referencing currently transformed entity can be resolved.
                  */
                 cpstate->entities = lappend(cpstate->entities, entity);
                 entities = lappend(entities, entity);
