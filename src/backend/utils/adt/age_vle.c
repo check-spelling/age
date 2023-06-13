@@ -421,7 +421,7 @@ static void free_VLE_local_context(VLE_local_context *vlelctx)
     /*
      * We need to free the contents of our stacks if the context is not dirty.
      * These stacks are created in a more volatile memory context. If the
-     * process was interupted, they will be garbage collected by PG. The only
+     * process was interrupted, they will be garbage collected by PG. The only
      * time we will ever clean them here is if the cache isn't being used.
      */
     if (vlelctx->is_dirty == false)
