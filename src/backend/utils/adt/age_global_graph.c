@@ -41,7 +41,7 @@
 
 /* internal data structures implementation */
 
-/* vertex entry for the vertex_hastable */
+/* vertex entry for the vertex_hashtable */
 typedef struct vertex_entry
 {
     graphid vertex_id;             /* vertex id, it is also the hash key */
