@@ -490,7 +490,7 @@ static TupleTableSlot *exec_cypher_merge(CustomScanState *node)
             Assert(css->found_a_path == false);
 
             /*
-             * This block of sub-case 1 should only be executued once. To
+             * This block of sub-case 1 should only be executed once. To
              * create the single path if the path does not exist. If we find
              * ourselves here again, the internal state of the MERGE execution
              * node was incorrectly altered.
