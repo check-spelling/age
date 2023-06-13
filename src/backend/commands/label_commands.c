@@ -805,7 +805,7 @@ static void remove_relation(List *qname)
                                 rel->schemaname, rel->relname)));
     }
 
-    // concurent is false
+    // concurrent is false
 
     ObjectAddressSet(address, RelationRelationId, rel_oid);
 
