@@ -2950,7 +2950,7 @@ static void transform_match_pattern(cypher_parsestate *cpstate, Query *query,
         {
             /*
              * coerce the WHERE clause to a boolean before AND with the property
-             * contraints, otherwise there could be evaluation issues.
+             * constraints, otherwise there could be evaluation issues.
              */
             where_qual = (Expr *)coerce_to_boolean(pstate, (Node *)where_qual,
                                                    "WHERE");
@@ -3489,9 +3489,9 @@ static A_Expr *filter_vertices_on_label_id(cypher_parsestate *cpstate,
 }
 
 /*
- * Creates the Contains operator to process property contraints for a vertex/
+ * Creates the Contains operator to process property constraints for a vertex/
  * edge in a MATCH clause. creates the agtype @> with the entity's properties
- * on the right and the contraints in the MATCH clause on the left.
+ * on the right and the constraints in the MATCH clause on the left.
  */
 static Node *create_property_constraints(cypher_parsestate *cpstate,
                                          transform_entity *entity,
