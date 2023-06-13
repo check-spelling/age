@@ -5618,7 +5618,7 @@ static TargetEntry *findTarget(List *targetList, char *resname)
 
 /*
  * Wrap the expression with a volatile function, to prevent the optimizer from
- * elimating the expression.
+ * eliminating the expression.
  */
 static Expr *add_volatile_wrapper(Expr *node)
 {
