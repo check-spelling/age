@@ -801,7 +801,7 @@ transform_cypher_union_tree(cypher_parsestate *cpstate, cypher_clause *clause,
 
         /*
          * If we find ourselves processing a recursive CTE here something
-         * went horribly wrong. That is an SQL contruct with no parallel in
+         * went horribly wrong. That is an SQL construct with no parallel in
          * cypher.
          */
         if (isTopLevel &&
