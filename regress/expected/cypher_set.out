@@ -358,7 +358,7 @@ SELECT set_test();
 (10 rows)
 
 --
--- Updating multiple fieds
+-- Updating multiple fields
 --
 SELECT * FROM cypher('cypher_set', $$MATCH (n) SET n.i = 3, n.j = 5 RETURN n $$) AS (a agtype);
                                                          a                                                         
